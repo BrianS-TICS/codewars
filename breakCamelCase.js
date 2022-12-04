@@ -4,10 +4,12 @@
 // "camelCasing"  =>  "camel Casing"
 // "identifier"   =>  "identifier"
 // ""             =>  ""
+// STRINGSFUNDAMENTALS
+
 // complete the function
 function solution(string) {
-    const strArr = [... string];
-    let strNew = ''; 
-    strArr.forEach( elemento => elemento.toUpperCase() === elemento ? strNew += " "+elemento : strNew += elemento)
+    const strArr = [...string];
+    let strNew = '';
+    strArr.forEach(elemento => elemento.toUpperCase() === elemento ? strNew += " " + elemento : strNew += elemento)
     return strNew;
-  }
+}
